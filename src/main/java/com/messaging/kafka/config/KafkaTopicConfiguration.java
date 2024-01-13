@@ -5,10 +5,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.TopicBuilder;
 
+import static com.messaging.kafka.constants.MessagingConstants.TOPIC_NAME;
+
 @Configuration
 public class KafkaTopicConfiguration {
 
-    private static final String TOPIC_NAME = "my-messaging-topic";
 
     @Bean
     public NewTopic myMessagingTopic() {
